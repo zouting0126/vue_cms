@@ -11,7 +11,7 @@ import router from "./router"
 Vue.use(VueRouter)
 Vue.use(Mint);
 
-new Vue({
+var vm = new Vue({
     el: '#app',
     data: {
         msg: '123'
@@ -19,3 +19,4 @@ new Vue({
     render:e=>e(app),
     router:router
 })
+console.log(vm)
